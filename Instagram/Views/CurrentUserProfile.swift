@@ -1,28 +1,27 @@
 //
-//  ProfileView.swift
+//  CurrentUserProfile.swift
 //  Instagram
 //
-//  Created by Thomas Garayua on 7/28/23.
+//  Created by Thomas Garayua on 8/1/23.
 //
 
 import SwiftUI
 
-struct ProfileView: View {
-    let user: User
-    
+struct CurrentUserProfile: View {
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1)
     ]
+    
     var body: some View {
-
+        NavigationStack {
             ScrollView {
                 // Header
                 VStack(spacing: 10) {
                     // pic and stats
                     HStack {
-                        Image(user.profileImageUrl ?? "")
+                        Image("Thomas_Garayua")
                             .resizable()
                             .scaledToFill()
                             .foregroundColor(.gray)
@@ -41,16 +40,12 @@ struct ProfileView: View {
                     
                     // name and bio
                     VStack(alignment: .leading) {
-                        if let fullName = user.fullName {
-                            Text(fullName)
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                        }
+                        Text("Thomas Garayua")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
                         
-                        if let bio = user.bio {
-                            Text(bio)
-                                .font(.footnote)
-                        }
+                        Text("iOS Developer")
+                            .font(.footnote)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal)
@@ -82,13 +77,12 @@ struct ProfileView: View {
                     }
                 }
             }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
+struct CurrentUserProfile_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: User.MOCK_USERS[0])
+        CurrentUserProfile()
     }
 }

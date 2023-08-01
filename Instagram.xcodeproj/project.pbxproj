@@ -24,6 +24,8 @@
 		1357A2B02A74D945003AAC3A /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A2AF2A74D945003AAC3A /* CreateUsernameView.swift */; };
 		1357A2B22A78AF82003AAC3A /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A2B12A78AF82003AAC3A /* CreatePasswordView.swift */; };
 		1357A2B42A78B186003AAC3A /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A2B32A78B186003AAC3A /* CompleteSignUpView.swift */; };
+		1357A2B62A78B44D003AAC3A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A2B52A78B44D003AAC3A /* User.swift */; };
+		1357A2B82A78C0CA003AAC3A /* CurrentUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A2B72A78C0CA003AAC3A /* CurrentUserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		1357A2AF2A74D945003AAC3A /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		1357A2B12A78AF82003AAC3A /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		1357A2B32A78B186003AAC3A /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
+		1357A2B52A78B44D003AAC3A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1357A2B72A78C0CA003AAC3A /* CurrentUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,18 +118,15 @@
 		1357A2982A743F32003AAC3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1357A2B92A78C2D0003AAC3A /* Auth */,
 				1357A28A2A743E69003AAC3A /* ContentView.swift */,
 				1357A29A2A744920003AAC3A /* MainTabView.swift */,
 				1357A29C2A744C02003AAC3A /* ProfileView.swift */,
 				1357A2A32A748DE9003AAC3A /* FeedCellView.swift */,
 				1357A2A52A7491DE003AAC3A /* FeedView.swift */,
 				1357A2A72A74CB53003AAC3A /* SearchView.swift */,
-				1357A2A92A74CDC0003AAC3A /* LoginView.swift */,
-				1357A2AB2A74D50E003AAC3A /* AddEmailView.swift */,
 				1357A2AD2A74D7F4003AAC3A /* IGTextFieldModifier.swift */,
-				1357A2AF2A74D945003AAC3A /* CreateUsernameView.swift */,
-				1357A2B12A78AF82003AAC3A /* CreatePasswordView.swift */,
-				1357A2B32A78B186003AAC3A /* CompleteSignUpView.swift */,
+				1357A2B72A78C0CA003AAC3A /* CurrentUserProfile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				1357A2A12A748944003AAC3A /* GridItem.swift */,
+				1357A2B52A78B44D003AAC3A /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +146,18 @@
 				1357A29F2A7486A0003AAC3A /* UserStatView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1357A2B92A78C2D0003AAC3A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1357A2A92A74CDC0003AAC3A /* LoginView.swift */,
+				1357A2AB2A74D50E003AAC3A /* AddEmailView.swift */,
+				1357A2B32A78B186003AAC3A /* CompleteSignUpView.swift */,
+				1357A2B12A78AF82003AAC3A /* CreatePasswordView.swift */,
+				1357A2AF2A74D945003AAC3A /* CreateUsernameView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +234,7 @@
 				1357A2B22A78AF82003AAC3A /* CreatePasswordView.swift in Sources */,
 				1357A2B02A74D945003AAC3A /* CreateUsernameView.swift in Sources */,
 				1357A2A82A74CB53003AAC3A /* SearchView.swift in Sources */,
+				1357A2B62A78B44D003AAC3A /* User.swift in Sources */,
 				1357A2A42A748DE9003AAC3A /* FeedCellView.swift in Sources */,
 				1357A2A22A748944003AAC3A /* GridItem.swift in Sources */,
 				1357A2AE2A74D7F4003AAC3A /* IGTextFieldModifier.swift in Sources */,
@@ -227,6 +242,7 @@
 				1357A28B2A743E69003AAC3A /* ContentView.swift in Sources */,
 				1357A2892A743E69003AAC3A /* InstagramApp.swift in Sources */,
 				1357A2B42A78B186003AAC3A /* CompleteSignUpView.swift in Sources */,
+				1357A2B82A78C0CA003AAC3A /* CurrentUserProfile.swift in Sources */,
 				1357A2A02A7486A0003AAC3A /* UserStatView.swift in Sources */,
 				1357A2AA2A74CDC0003AAC3A /* LoginView.swift in Sources */,
 				1357A2AC2A74D50E003AAC3A /* AddEmailView.swift in Sources */,

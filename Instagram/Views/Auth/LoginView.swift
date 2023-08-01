@@ -19,7 +19,7 @@ struct LoginView: View {
                 Spacer()
                 
                 // logo image
-                Image("Instagram-Logo-2010-2013")
+                Image("Instagram_logo")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 220, height: 100)
@@ -73,7 +73,9 @@ struct LoginView: View {
                 .foregroundColor(.gray)
                 
                 HStack {
-                    Image("Facebook-logo-blue-circle-large-transparent-png")
+                    Image("facbook_icon")
+                        .resizable()
+                        .frame(width: 20, height: 20)
                     
                     Text("Continue with Facebook")
                         .font(.footnote)
